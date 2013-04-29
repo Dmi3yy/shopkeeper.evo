@@ -5,3 +5,20 @@
 а так же по мере возможности исправлять найденные ошибки. 
 
 Полноценного развития данного решение не будет так как в самом разгаре разработка собственного решения bid-cart.
+
+внутри добавленно: 
+-ShopKeeper
+-CatalogFill
+-CatalogView
+-Include
+-SHKUserProfile
+-Compare
+-Paykeeper
+-ParamEdit
+-ParamEditFull
+-PHx
+-pickDocsInTree
+-SaveToShk
+-shk_OrderStat
+-SHKprintOrder
+-TV price
