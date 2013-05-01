@@ -123,6 +123,13 @@ if(isset($request['action'])){
       $output = '';
     break;
   }
+  //added by Bumkaka
+  $modx->minParserPasses=2;
+  $output = $modx->mergeSettingsContent($output);
+  $output = $modx->mergeChunkContent($output);
+  $output = $modx->evalSnippets($output);
+  $output = $modx->rewriteUrls($output);
+  //end added by Bumkaka
   
   echo $output;
   
