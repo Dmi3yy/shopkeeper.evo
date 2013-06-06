@@ -3,7 +3,7 @@
 /***********************************
 * 
 * http://modx-shopkeeper.ru/
-* Shopkeeper 1.3.5
+* Shopkeeper 1.3.6RC
 * Shopping cart for MODx Evolution
 * 
 ***********************************/
