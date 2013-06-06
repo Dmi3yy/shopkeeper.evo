@@ -32,7 +32,7 @@ if ($e->name == 'OnDocFormRender'){
   $tvIds = '';
 
   while ($row = $modx->db->getRow($result)){
-    $tvIds .= $row['type'] == "listbox-multiple" ? ",'".$row['id']."[]'" : ",".$row['id'];
+    $tvIds .=  ",".$row['id'];
   }
   
   $tvIds = substr($tvIds, 1);
