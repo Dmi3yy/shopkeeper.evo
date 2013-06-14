@@ -514,8 +514,6 @@ $(document).ready(function(){
 
 })(jQuery);
 
-
-if(jQuery.browser.msie && jQuery.browser.version=='6.0'){
+if(jQuery.support.opacity){
   document.execCommand("BackgroundImageCache",false,true);
 }
-
