@@ -34,7 +34,7 @@
   <tr>
     <td>Код подтверждения:* </td>
     <td>
-      <a href="[+action+]" title="Обновить код"><img align="top" src="manager/includes/veriword.php" width="148" height="60" alt="" style="border: 1px solid #039" /></a>
+      <a href="[+action+]" title="Обновить код"><img align="top" src="[(site_manager_url)]includes/veriword.php" width="148" height="60" alt="" style="border: 1px solid #039" /></a>
       <br /><br style="line-height:0.5" />
       <input type="text" name="formcode" size="20" />
     </td>

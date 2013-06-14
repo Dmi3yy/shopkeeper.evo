@@ -1,6 +1,11 @@
 <?php
+if (file_exists(dirname(__FILE__)."../../../assets/cache/siteManager.php")) {
+    include_once(dirname(__FILE__)."../../../assets/cache/siteManager.php");
+}else{
+    define('MGR_DIR', 'manager');
+}
 
-require_once '../../../manager/includes/protect.inc.php';
+require_once '../../../'.MGR_DIR.'/includes/protect.inc.php';
 
 //if(!in_array(strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST']),array(7,8))) exit;
 
@@ -27,7 +32,7 @@ if(!get_magic_quotes_gpc()){
   unset($key,$value);
 }
 
-define('MODX_MANAGER_PATH', "../../../manager/");
+define('MODX_MANAGER_PATH', "../../../".MGR_DIR."/");
 require_once(MODX_MANAGER_PATH . 'includes/config.inc.php');
 require_once(MODX_MANAGER_PATH . '/includes/protect.inc.php');
 define('MODX_API_MODE', true);

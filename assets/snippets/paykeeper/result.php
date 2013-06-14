@@ -1,8 +1,15 @@
 <?php
 
+if (file_exists(dirname(__FILE__)."../../../assets/cache/siteManager.php")) {
+    include_once(dirname(__FILE__)."../../../assets/cache/siteManager.php");
+}else{
+    define('MGR_DIR', 'manager');
+}
+
+
 define('DOCUMENT_ROOT',$_SERVER["DOCUMENT_ROOT"]);
 define('PAYKEEPER_PATH', DOCUMENT_ROOT."/assets/snippets/paykeeper/");
-define('MODX_MANAGER_PATH', "../../../manager/");
+define('MODX_MANAGER_PATH', "../../../".MGR_DIR."/");
 define('MODX_API_MODE', true);
 
 require_once(MODX_MANAGER_PATH . 'includes/config.inc.php');

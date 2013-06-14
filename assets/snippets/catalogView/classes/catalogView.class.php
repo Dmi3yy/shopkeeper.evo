@@ -378,8 +378,8 @@ class catalogView {
     function getTmplVars($contentIds){
         $templateVars = array();
         if($this->config['renderTVDisplayFormat']){
-            include_once MODX_BASE_PATH."manager/includes/tmplvars.format.inc.php";
-            include_once MODX_BASE_PATH."manager/includes/tmplvars.commands.inc.php";
+            include_once MODX_MANAGER_PATH."includes/tmplvars.format.inc.php";
+            include_once MODX_MANAGER_PATH."includes/tmplvars.commands.inc.php";
         }
         if(count($contentIds)>0){
           
