@@ -1,11 +1,7 @@
 <?php
-if (file_exists(dirname(__FILE__)."../../../assets/cache/siteManager.php")) {
-    include_once(dirname(__FILE__)."../../../assets/cache/siteManager.php");
-}else{
-    define('MGR_DIR', 'manager');
-}
 
-require_once '../../../'.MGR_DIR.'/includes/protect.inc.php';
+include_once(dirname(__FILE__)."/../../cache/siteManager.php");
+require_once(dirname(__FILE__).'/../../../'.MGR_DIR.'/includes/protect.inc.php');
 
 //if(!in_array(strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST']),array(7,8))) exit;
 
