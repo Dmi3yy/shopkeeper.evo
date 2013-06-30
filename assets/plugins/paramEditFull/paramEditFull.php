@@ -84,7 +84,7 @@ if ($e->name == 'OnDocFormRender') {
             })
             
         idtv = parseInt(n)+1;
-        var t_out = '<li id=\'liEditParamField\' class=\"'+id+'\" rel=\"'+idtv+'\"><input style=\"width:'+input_width+'\" id=\'inputParamEdit\' type=\'text\' value=\'\' class=\'text\'/><input style=\"width:'+input_width+'\" id=\'inputParamEdit\' type=\'text\' value=\'\' class=\'text\' /><span idtv=\"'+idtv+'\" class=\"addField\" rel=\"'+id+'\"><img title=\'добавить\' style=\'cursor:pointer;margin-right:2px;\' src=\"'+imgAdd+'\" /></span><span class=\'delField\'><img title=\'удалить\' style=\'cursor:pointer;margin-right:2px;\' src=\"'+imgDel+'\" /></span><span><img title=\'переместить\' class=\'spanDragUi\' style=\'cursor:move;margin-right:2px;\' src=\"'+imgDrag+'\" /></span></li>';
+        var t_out = '<li id=\'liEditParamField\' class=\"'+id+'\" rel=\"'+idtv+'\"><input onchange=\'documentDirty=true;\' style=\"width:'+input_width+'\" id=\'inputParamEdit\' type=\'text\' value=\'\' class=\'text\'/><input onchange=\'documentDirty=true;\' style=\"width:'+input_width+'\" id=\'inputParamEdit\' type=\'text\' value=\'\' class=\'text\' /><span idtv=\"'+idtv+'\" class=\"addField\" rel=\"'+id+'\"><img title=\'добавить\' style=\'cursor:pointer;margin-right:2px;\' src=\"'+imgAdd+'\" /></span><span class=\'delField\'><img title=\'удалить\' style=\'cursor:pointer;margin-right:2px;\' src=\"'+imgDel+'\" /></span><span><img title=\'переместить\' class=\'spanDragUi\' style=\'cursor:move;margin-right:2px;\' src=\"'+imgDrag+'\" /></span></li>';
         $($('li.'+id+'[rel='+rel+']').after(t_out));
         refreshTvFilds();
         return false;
