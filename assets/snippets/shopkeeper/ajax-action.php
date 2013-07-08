@@ -129,7 +129,7 @@ if(isset($request['action'])){
   $output = $modx->mergeSettingsContent($output);
   $output = $modx->mergeChunkContent($output);
   $output = $modx->evalSnippets($output);
-  //$output = $modx->rewriteUrls($output);
+  $output = $modx->rewriteUrls($output);
   //end added by Bumkaka
   
   echo $output;
