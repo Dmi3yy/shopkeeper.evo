@@ -1,3 +1,8 @@
+Проект переехал сюда: https://github.com/extras-evolution/shopkeeper
+и так доступен в репозитории для Evolution 
+
+
+
 Официальный сайт http://modx-shopkeeper.ru
 К сожалению Автор полностью ушел на REVO и забросил все что было
 
